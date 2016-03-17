@@ -10,7 +10,6 @@ bot = ChatBot("Terminal",
     storage_adapter="chatterbot.adapters.storage.JsonDatabaseAdapter",
     logic_adapters=[
         "chatterbot.adapters.logic.EvaluateMathematically",
-        "chatterbot.adapters.logic.TimeLogicAdapter",
         "chatterbot.adapters.logic.ClosestMatchAdapter"
     ],
     io_adapters=[
@@ -31,4 +30,4 @@ def getReply():
 
 if __name__=='__main__':
     app.debug = True
-    app.run('0.0.0.0', 8080)
+    app.run('0.0.0.0', 12000)
